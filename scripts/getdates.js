@@ -18,3 +18,4 @@ const visitsCounter = () => {
 document.querySelector('#year').innerHTML += getDate()
 document.querySelector('#lastModified').innerHTML = `Last modification: ${document.lastModified}` 
 document.querySelector('#visits').innerHTML = `Page Visits ${visitsCounter()}` 
+
