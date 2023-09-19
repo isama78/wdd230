@@ -70,6 +70,10 @@ main section {
     margin: 1rem auto;
 }
 
+main section ul li {
+    list-style: none;
+}
+
 main h3 {
     background: #1D4D72;
     color: white;
