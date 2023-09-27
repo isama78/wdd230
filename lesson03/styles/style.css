@@ -1,0 +1,104 @@
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: left;
+  background-color: #6F2DBD;
+  color: #fff;
+  padding: 0;
+}
+
+img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 80%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+h3 {
+  background-color: #A663CC;
+  padding: 0.3rem 1rem;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+header {
+  text-align: center;
+  color: #fff;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+main > div {
+  display: flex;
+  align-items: center;
+}
+
+main > div h3:nth-of-type(2) {
+  margin-left: 2rem 0.5rem;
+  background-color: #6F2DBD;
+  font-size: 2rem;
+}
+
+p, li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 0.3rem 0;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.colors th {
+  background-color: #999;
+}
+
+.colors td{
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: #6F2DBD;
+}
+
+.secondary {
+  background-color: #A663CC;
+}
+
+.links {
+  background-color: #B9FAF8;
+  color: #000;
+}
+
+.fonts{
+  background-color: #FFFFFF;
+  color: #000;
+}
+
+a {
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+  color: #B9FAF8;
+}
