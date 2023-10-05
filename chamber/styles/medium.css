@@ -1,0 +1,24 @@
+@media (min-width: 600px) {
+    #nav-bar {
+        background-color: #6F2DBD;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    header .cta {
+        display: block;
+        width: 9rem;
+        padding: 0.5rem;
+        text-align: center;
+        background-color: #fff;
+        color: #000;
+        border-radius: 5px;
+        border: none;
+        margin-right: 1rem;
+    }
+}
