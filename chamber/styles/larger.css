@@ -1,8 +1,10 @@
 @media (min-width: 960px) {
+    .container {
+        max-width: 980px;
+    }
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 6rem 20rem 8rem auto;
         row-gap: 0.5rem;
         padding: 1rem;
         text-align: center;
@@ -16,6 +18,21 @@
     .hero {
         grid-column: 1 /4;
         grid-row: 2 / 3;
+    }
+
+    main .hero>.hero-button {
+        position: absolute;
+        top: 38%;
+        left: 37%;
+        background-color: #6F2DBD;
+        color: #fff;
+        padding: 0.7rem 1rem;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px rgb(54, 54, 54), -3px 3px 3px rgb(54, 54, 54);
+        cursor: pointer;
+        width: 23%;
+        font-size: 1.5rem;
     }
 
     .wheather {

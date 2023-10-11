@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.container {
+    width: 100%;
+}
+
 header {
     background-color: #6F2DBD;
     display: flex;
@@ -51,7 +55,7 @@ header .cta {
 header .icons {
     display: flex;
     flex-wrap: nowrap;
-    
+
 }
 
 nav {
@@ -117,27 +121,77 @@ header .cta-upper-button {
 
 main {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 6rem 15rem 5rem 5rem;
+    grid-template-columns: auto;
+    /* grid-template-rows: auto auto auto auto; */
     gap: 0.5rem;
     padding: 1rem;
     text-align: center;
+    min-height: 300px;
 }
 
 main h1 {
     grid-row: 1 / 2;
+    background-color: #B9FAF8;
+    padding: 1rem;
+    margin: 0;
 }
 
-.hero {
+main>section {
+    background-color: #B9FAF8;
+}
+
+main .hero::before {
     grid-row: 2 / 3;
+    content: "";
+    background-image: url('../images/chamber-hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 50%;
+    display: inline-block;
 }
 
-.wheather {
+main .hero {
+    position: relative;
+}
+
+main .hero>.hero-button {
+    position: absolute;
+    top: 38%;
+    left: 38%;
+    background-color: #6F2DBD;
+    color: #fff;
+    padding: 0.3rem 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(54, 54, 54), -3px 3px 3px rgb(54, 54, 54);
+    cursor: pointer;
+    width: 20%;
+    font-size: 0.7rem;
+}
+
+main .wheather {
     grid-row: 3 / 4;
+    content: "";
+    background-image: url('../images/weather.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding-top: 50%;
+    display: inline-block;
 }
 
-.events {
+main .events::before {
     grid-row: 4 / 5;
+    content: "";
+    background-image: url('../images/events.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding-top: 50%;
+    display: inline-block;
 }
 
 .spotlights {
@@ -146,6 +200,39 @@ main h1 {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     justify-content: center;
+}
+
+.spotlight-1::before {
+    content: "";
+    background-image: url('../images/graphic-design-services.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding-top: 50%;
+    display: inline-block;
+}
+
+.spotlight-2::before {
+    content: "";
+    background-image: url('../images/restaurant.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding-top: 50%;
+    display: inline-block;
+}
+
+.spotlight-3::before {
+    content: "";
+    background-image: url('../images/little-sale-kids-sale-landing-page.avif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding-top: 50%;
+    display: inline-block;
 }
 
 main section {
@@ -169,7 +256,7 @@ footer {
     text-align: center;
 }
 
-footer > div {
+footer>div {
     width: 100%;
     color: #fff;
     margin: 0.3rem 0;
@@ -191,7 +278,7 @@ footer p {
     margin: 0.3rem 0;
 }
 
-footer > p {
+footer>p {
     font-size: 0.85rem;
     color: yellow;
 }
@@ -202,3 +289,19 @@ footer img {
     border-top-right-radius: 4rem;
 }
 
+@media (max-width: 280px) {
+    main .hero>.hero-button {
+        position: absolute;
+        top: 38%;
+        left: 36%;
+        background-color: #6F2DBD;
+        color: #fff;
+        padding: 0.3rem 0.5rem;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px rgb(54, 54, 54), -3px 3px 3px rgb(54, 54, 54);
+        cursor: pointer;
+        width: 25%;
+        font-size: 0.6rem;
+    }
+}
