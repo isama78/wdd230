@@ -2,6 +2,7 @@
     .container {
         max-width: 980px;
     }
+
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -55,17 +56,18 @@
         padding: 0;
     }
 
-    footer > p {
-        font-size: 0.85rem;
+    footer>p {
+        font-size: 0.7rem;
         color: yellow;
         align-self: flex-end;
         margin-bottom: 1rem;
+        width: 35%;
     }
 
     footer>div {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 45%;
+        width: 60%;
     }
 }
