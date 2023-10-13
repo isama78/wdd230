@@ -1,6 +1,8 @@
 let myInput = document.querySelector('#favchap')
 let btn = document.querySelector('button')
 let list = document.querySelector('#list')
+let editSection = document.querySelector('.edit-section')
+editSection.classList.add('hide')
 let liId = 0
 
 btn.addEventListener('click', () => {
@@ -30,6 +32,7 @@ btn.addEventListener('click', () => {
         myInput.value = ""
 
         editBtn.addEventListener('click', (e) => {
+            editSection.classList.remove('hide')
             let editInput = document.querySelector('.edit-input')
             editInput.focus()
             let sendEditionBtn = document.createElement('button')
@@ -37,6 +40,11 @@ btn.addEventListener('click', () => {
             let editionSection = document.querySelector('.edit-section')
             editionSection.append(sendEditionBtn)
             editInput.placeholder = e.target.parentElement.childNodes[0].data
+
+            document.querySelector('.cancel-edition-btn').addEventListener('click', () => {
+                editSection.classList.add('hide')
+                sendEditionBtn.remove()
+            })
 
             sendEditionBtn.addEventListener('click', () => {
                 let editedContent = editInput.value
@@ -46,6 +54,7 @@ btn.addEventListener('click', () => {
                 editInput.value = ""
                 editInput.placeholder = ""
                 sendEditionBtn.remove()
+                editSection.classList.add('hide')
                 myInput.focus()
             })
         })
