@@ -1,3 +1,5 @@
+
+
 const getDate = () => {
     let year = new Date().getFullYear()
     return year
@@ -18,6 +20,10 @@ const visitsCounter = () => {
 document.querySelector('#year').innerHTML += getDate()
 document.querySelector('#lastModified').innerHTML = `Last modification: ${document.lastModified}` 
 document.querySelector('#visits') ? document.querySelector('#visits').innerHTML = `Page Visits ${visitsCounter()}` : null
+const darkMode = document.querySelector('.slider')
+darkMode.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode')
+})
 
 let menu = document.querySelector('#menu')
 let navBar = document.querySelector('#nav-bar')

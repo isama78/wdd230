@@ -9,7 +9,10 @@
     width: 100%;
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Cormorant Garamond', serif;
 }
 
@@ -39,19 +42,6 @@ header .logo img {
     border-top-left-radius: 4rem;
     border-top-right-radius: 4rem;
 }
-
-/* header input {
-    background-image: url('../images/magnifying-glass.png');
-    background-repeat: no-repeat;
-    background-size: 1.5rem;
-    background-position: 5px center;
-    width: 15rem;
-    height: 2rem;
-    outline: none;
-    border-radius: 5px;
-    border: none;
-    padding: 0.5rem 0.5rem 0.5rem 2rem;
-} */
 
 header .cta {
     display: none;
@@ -287,6 +277,82 @@ footer>p {
     font-size: 0.85rem;
     color: yellow;
 }
+
+/* --------------------------------------DARK-MODE-SWITCH-------------------------------------- */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    margin-right: 1rem;
+}
+
+.switch > span:nth-of-type(1) {
+    top: -20px;
+    position: relative;
+    width: 5rem;
+    font-size: 0.8rem;
+    left: -6px;
+    color: #fff;
+    display: inline-block;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    border-radius: 5px;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #B9FAF8;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 5px;
+}
+
+.slider:before {
+    position: absolute;
+    border-radius: 5px;
+    content: "";
+    height: 17px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #A663CC;
+    border-radius: 5px;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #A663CC;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.dark-mode {
+    background-color: rgb(29, 28, 28);
+}
+
+/* --------------------------------------DARK-MODE-SWITCH-------------------------------------- */
 
 footer img {
     width: 7rem;
