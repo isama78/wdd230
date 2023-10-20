@@ -176,20 +176,29 @@ main .hero>.hero-button {
 
 main .wheather {
     grid-row: 3 / 4;
-    content: "";
+    /* content: "";
     background-image: url('../images/weather.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     padding-top: 50%;
-    display: inline-block;
+    display: inline-block; */
 }
+
+main .wheather > img {
+   width: 50%;
+   margin: 2rem 0;
+}
+
+main .wheather > p {
+    margin-top: 0.5rem;
+ }
 
 main .events::before {
     grid-row: 4 / 5;
     content: "";
-    background-image: url('../images/events.png');
+    background-image: url('../images/events.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -208,7 +217,7 @@ main .events::before {
 
 .spotlight-1::before {
     content: "";
-    background-image: url('../images/graphic-design-services.jpg');
+    background-image: url('../images/graphic-design-services.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -219,7 +228,7 @@ main .events::before {
 
 .spotlight-2::before {
     content: "";
-    background-image: url('../images/restaurant.png');
+    background-image: url('../images/restaurant.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -230,7 +239,7 @@ main .events::before {
 
 .spotlight-3::before {
     content: "";
-    background-image: url('../images/little-sale-kids-sale-landing-page.avif');
+    background-image: url('../images/little-sale-kids-sale-landing-page.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
