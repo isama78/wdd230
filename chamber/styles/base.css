@@ -135,7 +135,7 @@ main>section {
     background-color: #B9FAF8;
 }
 
-main .hero::before {
+/* main .hero::before {
     grid-row: 2 / 3;
     content: "";
     background-image: url('../images/chamber-hero.jpg');
@@ -144,10 +144,19 @@ main .hero::before {
     width: 100%;
     padding-top: 50%;
     display: inline-block;
-}
+} */
 
 main .hero {
     position: relative;
+}
+
+main .hero picture {
+    width: 100%;
+}
+
+main .hero picture img {
+    width: 100%;
+    height: auto;
 }
 
 main .hero>.hero-button {

@@ -64,7 +64,7 @@
         font-size: 0.9rem;
     }
 
-    main .hero::before {
+    /* main .hero::before {
         grid-row: 2 / 3;
         content: "";
         background-image: url('../images/chamber-hero.jpg');
@@ -73,7 +73,7 @@
         width: 100%;
         padding-top: 50%;
         display: inline-block;
-    }
+    } */
 
     .wheather {
         grid-column: 2 / 3;
