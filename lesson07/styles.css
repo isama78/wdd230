@@ -1,0 +1,38 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+header h1 {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem;
+    background: #0f0f0f;
+    animation: fade 10s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    display: inline;
+    margin-right: 2rem;
+}
