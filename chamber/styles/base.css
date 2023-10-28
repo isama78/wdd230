@@ -378,6 +378,53 @@ footer img {
     border-top-right-radius: 4rem;
 }
 
+.statistics img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+.atractions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 0.3rem;
+}
+
+.atractions img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+.calendar img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3rem;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+#welcome {
+    background-color: #A663CC;
+    color: #fff;
+    text-align: center;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    width: fit-content;
+}
+
 @media (max-width: 280px) {
     main .hero>.hero-button {
         position: absolute;

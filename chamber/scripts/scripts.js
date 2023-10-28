@@ -17,6 +17,16 @@ const visitsCounter = () => {
     return visits
 }
 
+const calculatorBetweenVisits = () => {
+    let rightNow = new Date()
+    let lastVisit = window.localStorage.getItem('lastVisit')
+    localStorage.setItem('lastVisit', rightNow)
+    let diff = new Date(rightNow)  - new Date(lastVisit) 
+    let diffInDays = diff / (1000 * 60 * 60 * 24)
+    return lastVisit === null ? 'Welcome! Let us know if you have any questions.' : diffInDays < 1 ? 'Back so soon! Awesome!' : `You last visited ${diffInDays.toFixed(0)} days ago.`
+}
+
+document.querySelector('#welcome').innerHTML = calculatorBetweenVisits()
 document.querySelector('#year').innerHTML += getDate()
 document.querySelector('#lastModified').innerHTML = `Last modification: ${document.lastModified}` 
 document.querySelector('#visits') ? document.querySelector('#visits').innerHTML = `Page Visits ${visitsCounter()}` : null

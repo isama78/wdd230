@@ -49,6 +49,64 @@
         grid-row: 2 / 3;
     }
 
+    .statistics {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .atractions {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .calendar {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .images {
+        grid-column: 2 / 3;
+        grid-row: 2 / 5;
+    }
+    
+    .images img {
+        animation: turningBack 0.3s ease-in-out forwards;
+    }
+
+    .images img:hover {
+        animation: scaling 0.3s ease-in-out forwards;
+    }
+
+    @keyframes scaling {
+        0% {
+            transform: scale(1);
+            filter: grayscale(0%);
+            box-shadow: 0 0 0;
+        }
+
+        100%{
+            transform: scale(1.05);
+            filter: grayscale(100%);
+            box-shadow: 5px 5px 5px black;
+        }
+    }
+
+    @keyframes turningBack {
+        0%{
+            transform: scale(1.05);
+            filter: grayscale(100%);
+            box-shadow: 5px 5px 5px black;
+        }
+
+        100% {
+            transform: scale(1);
+            filter: grayscale(0%);
+            box-shadow: 0 0 0;
+        }
+
+        
+    }
+
     main .hero>.hero-button {
         position: absolute;
         top: 38%;
