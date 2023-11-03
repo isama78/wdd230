@@ -1,0 +1,29 @@
+table {
+    border: 5px double rgb(49, 49, 49);
+    padding: 0.3rem;
+    text-align: center;
+    margin: auto;
+}
+
+thead {
+    background-color: orange;
+}
+
+caption {
+    caption-side: bottom;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid rgb(49, 49, 49);
+    margin: 0;
+}
+
+tbody tr th {
+    background-color: black;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: rgba(255, 165, 0, 0.3);
+}
