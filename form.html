@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is the Mauro Jose Isa´s WDD 230 - Web Frontend Development course assignment portal">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <meta name="author" content="Mauro Jose Isa">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;1,200;1,300&family=Mooli&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap"
+        rel="stylesheet">
+    <title>Mauro Jose Isa - WDD 230 - Web Frontend Development</title>
+    <meta property="og:title" content="Mauro Jose Isa - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Arco_de_C%C3%B3rdoba.tif/lossy-page1-1500px-Arco_de_C%C3%B3rdoba.tif.jpg?C%C3%B3rdoba_(Argentina)153235120">
+    <meta property="og:url" content="https://isama78.github.io/wdd230/index.html">
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <img src="./images/WhatsApp-Image.webp" alt="Mauro Isa photo">
+            <h1>Mauro José Isa</h1>
+        </header>
+        <div id="menu"></div>
+        <nav id="navBar">
+            <a href="#">Home</a>
+            <a href="chamber/siteplan.html">Site Plan</a>
+            <a href="chamber/">Chamber</a>
+            <a href="https://degreeportal.byupathway.org/" target="_blank">BYU-Idaho</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=spa"
+                target="_blank">Scripture</a>
+        </nav>
+
+        <main>
+            <form method="get" action="record.html">
+                <label>Username <input type="text" name="username" id="username" placeholder="username" required></label>
+                <label>Password <input type="password" name="password" id="password" pattern="^[a-zA-Z0-9]{8,}$"
+                        title="Must contain 8 or more alpha-numeric characters" placeholder="password" required></label>
+                <label>Comfirm Password <input type="password" name="password2" id="password2"
+                        pattern="^[a-zA-Z0-9]{8,}$" title="Must contain 8 or more alpha-numeric characters"  placeholder="password"
+                        required></label>
+                <div id="message"></div>
+                <label>Email <input type="email" name="email" id="email" pattern=".+@byui\.edu$"
+                        title="Please enter a valid email address" placeholder="email" required></label>
+                <div class="input-range">
+                    <label>Page Rating
+                        <span>Value: <output id="value"></output></span>
+                        <input type="range" name="range" id="pi_input" min="0" max="10"></label>
+
+                </div>
+                <input type="submit" id="submit" value="Send Form">
+            </form>
+        </main>
+        <footer>
+            <p>
+                <span id="year">&copy;</span>
+                <span>Mauro Jose Isa</span>
+                <span>Córdoba, Argentina</span>
+            </p>
+            <p class="lastmod" id="lastModified"></p>
+        </footer>
+    </div>
+    <script src="./scripts/getdates.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
