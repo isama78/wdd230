@@ -132,6 +132,10 @@
         
     }
 
+    main section {
+        width: 100%;
+    }
+
     main .hero>.hero-button {
         position: absolute;
         top: 38%;
@@ -166,6 +170,7 @@
     .events {
         grid-column: 1 / 2;
         grid-row: 3 / 4;
+        height: -webkit-fill-available;
     }
     
     .spotlights {

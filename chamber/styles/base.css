@@ -175,7 +175,7 @@ main .hero>.hero-button {
     font-size: 0.7rem;
 }
 
-main .wheather {
+.wheather {
     grid-row: 3 / 4;
     /* content: "";
     background-image: url('../images/weather.jpg');
