@@ -122,6 +122,7 @@ main {
     padding: 1rem;
     text-align: center;
     min-height: 300px;
+    justify-content: center;
 }
 
 main h1 {
@@ -207,6 +208,54 @@ main .events::before {
     display: inline-block;
 }
 
+form{
+    margin: auto;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+form select {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+}
+
+form label input, form select, form textarea {
+    padding: 0.4rem 2%;
+    border-radius: 5px;
+    border: none;
+    background-color: lightgray;
+    outline: none;
+}
+
+form label textarea {
+    resize: none;
+    height: 90px;
+}
+
+ul {
+    margin: 0.5rem;
+    font-size: .8rem;
+    text-align: left;
+}
+
+ul li {
+    margin-bottom: 0.3rem;
+}
+
+#submit-btn {
+    background-color: #A663CC;
+    color: #fff;
+    margin-top: 1rem;
+}
+
 .spotlights {
     grid-row: 5 / 6;
     display: grid;
@@ -251,6 +300,8 @@ main .events::before {
 main section {
     border: 1px solid #6F2DBD;
     padding: 1rem;
+    width: 70%;
+    margin: auto;
 }
 
 main section article {
@@ -368,6 +419,7 @@ input:checked+.slider:before {
 
 .dark-mode {
     background-color: rgb(29, 28, 28);
+    color: #fff;
 }
 
 /* --------------------------------------DARK-MODE-SWITCH-------------------------------------- */

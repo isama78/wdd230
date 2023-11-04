@@ -36,6 +36,9 @@ darkMode.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode')
 })
 
+const timeAndDate = new Date()
+if(document.querySelector('#timestamp')) document.querySelector('#timestamp').value = timeAndDate
+
 let menu = document.querySelector('#menu')
 let navBar = document.querySelector('#nav-bar')
 
