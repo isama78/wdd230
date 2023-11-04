@@ -47,6 +47,7 @@
     form {
         grid-column: 1 / 2;
         grid-row: 2 / 6;
+        height: -webkit-fill-available;
     }
 
     .non-profit-section {
@@ -77,21 +78,26 @@
     .statistics {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
+        height: -webkit-fill-available;
     }
 
     .atractions {
         grid-column: 1 / 2;
         grid-row: 3 / 4;
+        height: -webkit-fill-available;
     }
 
     .calendar {
         grid-column: 1 / 2;
         grid-row: 4 / 5;
+        height: -webkit-fill-available;
     }
 
     .images {
         grid-column: 2 / 3;
         grid-row: 2 / 5;
+        height: -webkit-fill-available;
+        justify-content: space-between;
     }
     
     .images img {
