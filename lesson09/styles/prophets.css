@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+section {
+    border-radius: 3px;
+    background-color: lightgray;
+    padding: 0.5rem 1rem;
+    max-width: 400px;
+    margin: 1rem auto;
+}
+
+section p span {
+    font-weight: bolder;
+}
+
+section img {
+    box-shadow: 5px 5px 20px rgb(82, 81, 81),
+    -5px -5px 20px rgb(82, 81, 81);
+}
+
+h1 {
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+    max-width: 1400px;
+    margin: auto;
+}
