@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <title>Cordoba Chamber of Commerce || Home</title>
+    <title>Cordoba Chamber of Commerce || Directory</title>
 </head>
 
 <body>
@@ -48,42 +48,17 @@
             <div id="menu"></div>
         </header>
         <nav id="nav-bar">
-            <a href="#">Home</a>
+            <a href="./index.html">Home</a>
             <a href="./discover.html">Discover</a>
-            <a href="./directory.html">Directory</a>
+            <a href="#">Directory</a>
             <a class="cta-upper-button" href="./join.html">Join</a>
         </nav>
         <main>
-            <h1>Cordoba Chamber of Commerce</h1>
-            <section class="hero">
-                <picture>
-                    <source media="(max-width: 600px)" srcset="./images/rsz_1wdd230-org-small-image.webp">
-                    <source media="(max-width: 960px)" srcset="./images/rsz_21wdd230-org-medium-image.webp">
-                    <img src="./images/rsz_wdd230-org-large-image.webp" alt="image of  meeting">
-                </picture>
-                <!-- <button class="hero-button">FIND OUT</button> -->
-            </section>
-            <section class="events">
-            </section>
-            <section class="wheather">
-                <h2>wheather</h2>
-                <img src="./images/clouds.webp" alt="sunny">
-                <p>Temperature</p>
-                <span class="temp">56</span>
-                <span>F°</span>
-                <p>Wind</p>
-                <span class="wind">6</span>
-                <span>mph</span>
-                <p class="windchill">Windchill: </p>
-            </section>
-            <section class="spotlights">
-                <article class="spotlight-1">
-                </article>
-                <article class="spotlight-2">
-                </article>
-                <article class="spotlight-3">
-                </article>
-            </section>
+            <h1>Directory</h1>
+            <div class="directory-buttons">
+                <i class="fa-solid fa-grip"></i>
+                <i class="fa-solid fa-list"></i>
+            </div>
         </main>
         <footer>
             <div>
@@ -107,8 +82,7 @@
             </p>
         </footer>
     </div>
-    <script src="./scripts/scripts.js"></script>
-    <script src="./scripts/windchill.js"></script>
+    <script type="module" src="./scripts/scripts.js"></script>
 </body>
 
 </html>

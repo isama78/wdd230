@@ -123,13 +123,15 @@ main {
     text-align: center;
     min-height: 300px;
     justify-content: center;
+    position: relative;
 }
 
 main h1 {
-    grid-row: 1 / 2;
+    grid-column: 1 / 2;
     background-color: #B9FAF8;
     padding: 1rem;
     margin: 0;
+    position: relative;
 }
 
 main>section {
@@ -475,6 +477,25 @@ footer img {
     margin: 0.5rem auto;
     padding: 0.5rem;
     width: fit-content;
+}
+
+.directory-buttons {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.directory-buttons i {
+    text-align: right;
+    margin-left: 0.5rem;
+    padding: 0.3rem;
+    color: #6F2DBD;
+    font-size: 2rem;
+}
+
+.directory-buttons i:hover {
+    background-color: #A663CC; 
+    color: white;
 }
 
 @media (max-width: 280px) {

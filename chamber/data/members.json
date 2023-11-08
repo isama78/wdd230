@@ -1,0 +1,68 @@
+{
+    "members": [
+        {
+            "name": "Baycor",
+            "address": "Dr. Jose Pizarro 1159, Altos de Velez Sarfield Cordoba - Argentina.",
+            "phone": "+5493514617680",
+            "url": "https://www.baycorpisos.com.ar/",
+            "logo": "images/directory/logo-baycor.png",
+            "level": "Bronze"
+        },
+        {
+            "name": "Time Informática",
+            "address": "José Roque Funes 1723 - Córdoba - 5000",
+            "phone": "+5493513220058",
+            "url": "https://www.timeinformatica.com.ar/",
+            "logo": "images/directory/logo-time-informatica",
+            "level": "Silver"
+        },
+        {
+            "name": "Venex",
+            "address": "Jerónimo Cortés 23, X5001 Córdoba",
+            "phone": "08105558892",
+            "url": "https://www.venex.com.ar/",
+            "logo": "images/directory/logo_venex.png",
+            "level": "Gold"
+        },
+        {
+            "name": "Feas Electrónica S.A.",
+            "address": "Av. Colon 5760 Córdoba Córdoba X5003DFP",
+            "phone": "+543516750048",
+            "url": "https://www.feaselectronica.com.ar/",
+            "logo": "images/directory/Feas-Electrónica-Equipamiento-Medico.png",
+            "level": "Silver"
+        },
+        {
+            "name": "Hiper Seco",
+            "address": "Bv. España 600, Villa María, Córdoba.",
+            "phone": "+5493534615339",
+            "url": "https://www.hiperseco.com/",
+            "logo": "images/directory/logo-baycor.png",
+            "level": "Gold"
+        },
+        {
+            "name": "Cormetal",
+            "address": "Ruta Nacional N° 9 Km. 556, Villa María, Córdoba, Argentina.",
+            "phone": "+5493536567355",
+            "url": "https://www.cormetal.com.ar/",
+            "logo": "images/directory/logo-cormetal.png",
+            "level": "Silver"
+        },
+        {
+            "name": "Ever Wear",
+            "address": "Gontero 4885 - Parque Industrial, San Francisco, Córdoba",
+            "phone": "+5493564424240",
+            "url": "https://www.everwear.com.ar/",
+            "logo": "images/directory/logo-ever-wear.png",
+            "level": "Bronze"
+        },
+        {
+            "name": "Gamasi S.R.L.",
+            "address": "Esquiú Nº 801, Cordoba - Argentina.",
+            "phone": "+5493515287730",
+            "url": "http://gamasisrl.com.ar/",
+            "logo": "images/directory/gamasi-logo.jpg",
+            "level": "Bronze"
+        }
+    ]
+}
