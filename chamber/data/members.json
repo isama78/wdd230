@@ -9,8 +9,8 @@
             "level": "Bronze"
         },
         {
-            "name": "Time Informática",
-            "address": "José Roque Funes 1723 - Córdoba - 5000",
+            "name": "Time Informatica",
+            "address": "Jose Roque Funes 1723 - Córdoba - 5000",
             "phone": "+5493513220058",
             "url": "https://www.timeinformatica.com.ar/",
             "logo": "images/directory/logo-time-informatica",
@@ -18,15 +18,15 @@
         },
         {
             "name": "Venex",
-            "address": "Jerónimo Cortés 23, X5001 Córdoba",
+            "address": "Jeronimo Cortes 23, X5001 Cordoba",
             "phone": "08105558892",
             "url": "https://www.venex.com.ar/",
             "logo": "images/directory/logo_venex.png",
             "level": "Gold"
         },
         {
-            "name": "Feas Electrónica S.A.",
-            "address": "Av. Colon 5760 Córdoba Córdoba X5003DFP",
+            "name": "Feas Electronica S.A.",
+            "address": "Av. Colon 5760 Cordoba Cordoba X5003DFP",
             "phone": "+543516750048",
             "url": "https://www.feaselectronica.com.ar/",
             "logo": "images/directory/Feas-Electrónica-Equipamiento-Medico.png",
@@ -34,7 +34,7 @@
         },
         {
             "name": "Hiper Seco",
-            "address": "Bv. España 600, Villa María, Córdoba.",
+            "address": "Bv. España 600, Villa María, Cordoba.",
             "phone": "+5493534615339",
             "url": "https://www.hiperseco.com/",
             "logo": "images/directory/logo-baycor.png",
@@ -42,7 +42,7 @@
         },
         {
             "name": "Cormetal",
-            "address": "Ruta Nacional N° 9 Km. 556, Villa María, Córdoba, Argentina.",
+            "address": "Ruta Nacional N° 9 Km. 556, Villa Maria, Cordoba, Argentina.",
             "phone": "+5493536567355",
             "url": "https://www.cormetal.com.ar/",
             "logo": "images/directory/logo-cormetal.png",
@@ -50,7 +50,7 @@
         },
         {
             "name": "Ever Wear",
-            "address": "Gontero 4885 - Parque Industrial, San Francisco, Córdoba",
+            "address": "Gontero 4885 - Parque Industrial, San Francisco, Cordoba",
             "phone": "+5493564424240",
             "url": "https://www.everwear.com.ar/",
             "logo": "images/directory/logo-ever-wear.png",

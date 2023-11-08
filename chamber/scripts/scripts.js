@@ -1,6 +1,3 @@
-
-
-
 const getDate = () => {
     let year = new Date().getFullYear()
     return year
@@ -46,4 +43,16 @@ let navBar = document.querySelector('#nav-bar')
 menu.addEventListener('click', () => {
     menu.classList.toggle('show')
     navBar.classList.toggle('show')
+})
+
+// Directory Page
+let membersList = null
+const url = 'https://api.github.com/repos/isama78/wdd230/contents/chamber/data/members.json'
+fetch(url)
+.then(resp => resp.json())
+.then(data => {
+    const contentBase64 = data.content;
+    const contentDecoded = atob(contentBase64);
+    const jsonData = JSON.parse(contentDecoded);
+    console.log(jsonData.members);
 })
