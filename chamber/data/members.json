@@ -13,7 +13,7 @@
             "address": "Jose Roque Funes 1723 - Córdoba - 5000",
             "phone": "+5493513220058",
             "url": "https://www.timeinformatica.com.ar/",
-            "logo": "images/directory/logo-time-informatica",
+            "logo": "images/directory/logo-time-informatica.png",
             "level": "Silver"
         },
         {
@@ -29,7 +29,7 @@
             "address": "Av. Colon 5760 Cordoba Cordoba X5003DFP",
             "phone": "+543516750048",
             "url": "https://www.feaselectronica.com.ar/",
-            "logo": "images/directory/Feas-Electrónica-Equipamiento-Medico.png",
+            "logo": "images/directory/Feas-Electronica-Equipamiento-Medico.png",
             "level": "Silver"
         },
         {
@@ -58,7 +58,7 @@
         },
         {
             "name": "Gamasi S.R.L.",
-            "address": "Esquiú Nº 801, Cordoba - Argentina.",
+            "address": "Esquiu Nº 801, Cordoba - Argentina.",
             "phone": "+5493515287730",
             "url": "http://gamasisrl.com.ar/",
             "logo": "images/directory/gamasi-logo.jpg",

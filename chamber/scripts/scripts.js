@@ -48,11 +48,34 @@ menu.addEventListener('click', () => {
 // Directory Page
 let membersList = null
 const url = 'https://api.github.com/repos/isama78/wdd230/contents/chamber/data/members.json'
-fetch(url)
-.then(resp => resp.json())
-.then(data => {
+const getData = async url => {
+    const res = await fetch(url)
+    const data = await res.json()
     const contentBase64 = data.content;
     const contentDecoded = atob(contentBase64);
     const jsonData = JSON.parse(contentDecoded);
-    console.log(jsonData.members);
-})
+    membersList = jsonData.members;
+    displayMembers(jsonData.members)
+}
+getData(url)
+
+const membersContainer = document.querySelector('.members')
+const displayMembers = members => {
+    members.forEach(member => {
+        const card = document.createElement('section')
+        const image = document.createElement('img')
+        const name = document.createElement('p')
+        const address = document.createElement('p')
+        const phone = document.createElement('p')
+        const link = document.createElement('a')
+        image.setAttribute('src', member.logo)
+        image.setAttribute('alt', member.name)
+        link.setAttribute('href', member.url)
+        address.innerHTML = member.address
+        phone.innerHTML = member.phone
+        name.innerHTML = member.name
+        card.append(image,name,phone,address,link)
+        membersContainer.append(card)
+    });
+}
+
