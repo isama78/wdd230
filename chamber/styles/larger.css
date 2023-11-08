@@ -1,6 +1,6 @@
 @media (min-width: 960px) {
     .container {
-        max-width: 980px;
+        max-width: 830px;
     }
 
     main {
@@ -14,6 +14,7 @@
     main h1 {
         grid-column: 1 /4;
         grid-row: 1 / 2;
+        width: 100%;
     }
 
     .hero {
@@ -94,5 +95,27 @@
     .images {
         grid-column: 2 / 4;
         grid-row: 2 / 5;
+    }
+
+    .members {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 5px;
+        align-items: center;
+    }
+
+    main.members.list section {
+        display: -webkit-inline-box;
+        max-width: none;
+    }
+
+    main.members.list section > p,
+    main.members.list section > a  {
+        margin-left: 1rem;
+        width: 20%;
+    }
+
+    main.members.list section > p:nth-of-type(4) {
+        display: none;
     }
 }

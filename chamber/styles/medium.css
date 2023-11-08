@@ -140,6 +140,7 @@
 
     main section {
         width: 100%;
+        height: -webkit-fill-available;
     }
 
     main .hero>.hero-button {
@@ -197,4 +198,26 @@
     .spotlight-3 {
         grid-column: 3 / 4;
     }
+
+    .directory-buttons {
+        position: absolute;
+        right: 25px;
+        top: 20px;
+    }
+
+    /* main.members.list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main.members.list section {
+        background: transparent;
+        border: none;
+        text-align: left;
+        max-width: 400px;
+    }
+
+    main.members.list section > div {
+        display: none;
+    } */
 }

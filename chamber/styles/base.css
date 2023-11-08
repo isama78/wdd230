@@ -481,8 +481,8 @@ footer img {
 
 .directory-buttons {
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 20px;
+    top: 15px;
 }
 
 .directory-buttons i {
@@ -496,6 +496,40 @@ footer img {
 .directory-buttons i:hover {
     background-color: #A663CC; 
     color: white;
+}
+
+.members img {
+    width: 72%;
+    background: #B9FAF8;
+    padding: 0.5rem;
+    margin: auto;
+}
+
+.members section a {
+    font-size: .73rem;
+}
+
+.members section > div {
+    min-height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.members.list {
+    display: flex;
+    flex-direction: column;
+}
+
+main.members.list section {
+    background: transparent;
+    border: none;
+    text-align: left;
+    max-width: 400px;
+}
+
+main.members.list section > div {
+    display: none;
 }
 
 @media (max-width: 280px) {

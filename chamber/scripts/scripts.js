@@ -64,18 +64,30 @@ const displayMembers = members => {
     members.forEach(member => {
         const card = document.createElement('section')
         const image = document.createElement('img')
+        const imgContent = document.createElement('div')
         const name = document.createElement('p')
         const address = document.createElement('p')
         const phone = document.createElement('p')
+        const level = document.createElement('p')
         const link = document.createElement('a')
         image.setAttribute('src', member.logo)
         image.setAttribute('alt', member.name)
         link.setAttribute('href', member.url)
+        link.setAttribute('target', '_blank')
+        imgContent.append(image)
+        link.innerHTML = member.url
+        level.innerHTML = `Level: ${member.level}` 
         address.innerHTML = member.address
         phone.innerHTML = member.phone
         name.innerHTML = member.name
-        card.append(image,name,phone,address,link)
+        card.append(imgContent,name,phone,address,level,link)
         membersContainer.append(card)
     });
 }
+
+const mainDirectory = document.querySelector('.members')
+const gridBtn = document.querySelector('.grid-btn')
+const listBtn = document.querySelector('.list-btn')
+gridBtn.addEventListener('click', () => mainDirectory.classList.remove('list'))
+listBtn.addEventListener('click', () => mainDirectory.classList.add('list'))
 
