@@ -1,0 +1,121 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/holygrail.html",
+                    "title": "Grid Example"
+                },
+                {
+                    "url": "lesson01/media-query.html",
+                    "title": "Media Queries"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/design.html",
+                    "title": "Design Principles Document"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "lesson03/chamber-site-plan.html",
+                    "title": "Chamber Site Plan"
+                },
+                {
+                    "url": "images/combinator_excercise.png",
+                    "title": "Combinator Excercise"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "chamber/index.html",
+                    "title": "Chamber Home Page"
+                },
+                {
+                    "url": "https://codepen.io/isama78/pen/rNoJoVJ",
+                    "title": "CSS Pseudo-elements Code Pen Activity"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "Book of Mormon App"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "lesson03/responsive-images.html",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url": "lesson06/images/landscape.webp",
+                    "title": "Landscape Webp"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson07/lazyload.html",
+                    "title": "LazyLoad Activity"
+                },
+                {
+                    "url": "chamber/discover.html",
+                    "title": "Chamber Discover Page"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "Table Build"
+                },
+                {
+                    "url": "chamber/join.html",
+                    "title": "Chamber Join Page"
+                },
+                {
+                    "url": "form-start/index.html",
+                    "title": "Course Proposal Application"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Latter-day Prophets"
+                },
+                {
+                    "url": "chamber/directory.html",
+                    "title": "Chamber Members Directory"
+                },
+                {
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "Members Json File"
+                }
+            ]
+        }
+    ]
+}
