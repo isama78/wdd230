@@ -5,7 +5,7 @@
             "links": [
                 {
                     "url": "lesson01/holygrail.html",
-                    "title": "Grid Example"
+                    "title": "Grid"
                 },
                 {
                     "url": "lesson01/media-query.html",
@@ -18,7 +18,7 @@
             "links": [
                 {
                     "url": "lesson02/design.html",
-                    "title": "Design Principles Document"
+                    "title": "Design"
                 }
             ]
         },
@@ -31,7 +31,7 @@
                 },
                 {
                     "url": "images/combinator_excercise.png",
-                    "title": "Combinator Excercise"
+                    "title": "Combinator"
                 }
             ]
         },
@@ -44,7 +44,7 @@
                 },
                 {
                     "url": "https://codepen.io/isama78/pen/rNoJoVJ",
-                    "title": "CSS Pseudo-elements Code Pen Activity"
+                    "title": "Pseudo-elements"
                 }
             ]
         },
@@ -53,7 +53,7 @@
             "links": [
                 {
                     "url": "lesson05/bom.html",
-                    "title": "Book of Mormon App"
+                    "title": "BOM"
                 }
             ]
         },
@@ -66,7 +66,7 @@
                 },
                 {
                     "url": "lesson06/images/landscape.webp",
-                    "title": "Landscape Webp"
+                    "title": "Webp"
                 }
             ]
         },
@@ -75,7 +75,7 @@
             "links": [
                 {
                     "url": "lesson07/lazyload.html",
-                    "title": "LazyLoad Activity"
+                    "title": "LazyLoad"
                 },
                 {
                     "url": "chamber/discover.html",
@@ -88,7 +88,7 @@
             "links": [
                 {
                     "url": "lesson08/tablebuild.html",
-                    "title": "Table Build"
+                    "title": "Table"
                 },
                 {
                     "url": "chamber/join.html",
@@ -96,7 +96,7 @@
                 },
                 {
                     "url": "form-start/index.html",
-                    "title": "Course Proposal Application"
+                    "title": "Course Proposal"
                 }
             ]
         },
@@ -105,15 +105,15 @@
             "links": [
                 {
                     "url": "lesson09/prophets.html",
-                    "title": "Latter-day Prophets"
+                    "title": "LDS Prophets"
                 },
                 {
                     "url": "chamber/directory.html",
-                    "title": "Chamber Members Directory"
+                    "title": "Members Directory"
                 },
                 {
                     "url": "lesson09/new-ward-members.json",
-                    "title": "Members Json File"
+                    "title": "Json File"
                 }
             ]
         }
