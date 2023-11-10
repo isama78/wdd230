@@ -40,11 +40,7 @@
             "links": [
                 {
                     "url": "chamber/index.html",
-                    "title": "Chamber Home Page"
-                },
-                {
-                    "url": "https://codepen.io/isama78/pen/rNoJoVJ",
-                    "title": "Pseudo-elements"
+                    "title": "Chamber Home"
                 }
             ]
         },
@@ -61,8 +57,8 @@
             "lesson": "06",
             "links": [
                 {
-                    "url": "lesson03/responsive-images.html",
-                    "title": "Responsive Images"
+                    "url": "lesson06/responsive-images.html",
+                    "title": "Responsive"
                 },
                 {
                     "url": "lesson06/images/landscape.webp",
@@ -79,7 +75,7 @@
                 },
                 {
                     "url": "chamber/discover.html",
-                    "title": "Chamber Discover Page"
+                    "title": "Chamber Discover"
                 }
             ]
         },
@@ -92,7 +88,7 @@
                 },
                 {
                     "url": "chamber/join.html",
-                    "title": "Chamber Join Page"
+                    "title": "Chamber Join"
                 },
                 {
                     "url": "form-start/index.html",

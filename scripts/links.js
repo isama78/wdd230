@@ -12,17 +12,16 @@ const displayLinks = weeks => {
     weeks.forEach(week => {
         let li = document.createElement('li')
         li.textContent = `Week ${week.lesson}: ` 
-        let a = document.createElement('a')
-        week.links.forEach(link => {
+        
+        week.links.forEach((link, index) => {
+            console.log(index)
+            let a = document.createElement('a')
             a.setAttribute('href', `${baseURL}${link.url}`)
-            a.innerHTML += `${link.title} |` 
+            a.setAttribute('target', `_blank`)
+            week.links.length - 1 === index ? a.innerHTML += ` ${link.title}` : a.innerHTML += ` ${link.title} |`
+            li.append(a)
         })
-        li.append(a)
         ulLinks.append(li)
     });
 }
-
-
-
-
 getLinks(linksURL)
