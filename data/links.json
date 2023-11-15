@@ -112,6 +112,15 @@
                     "title": "Json File"
                 }
             ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "lesson10/weather.html",
+                    "title": "Weather"
+                }
+            ]
         }
     ]
 }
