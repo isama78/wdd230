@@ -1,5 +1,6 @@
 let mainMenu = document.querySelector('#menu')
 let navBar = document.querySelector('#navBar')
+let weatherSection = document.querySelector('.local-weather')
 
 mainMenu.addEventListener('click', () => {
     mainMenu.classList.toggle('show')
@@ -36,3 +37,46 @@ if (document.querySelector('#password')) {
         checkSame()
     })
 }
+
+//Show weather
+const currentWeatherUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=-31.3990547&lon=-64.3590261&units=imperial&appid=cd2e98536f0eda82aa2f8d45270fc084'
+
+const apiFetch = async (url, displayData) => {
+    try {
+        const response = await fetch(url)
+        if (response.ok) {
+            const data = await response.json()
+            console.log(data)
+            displayData(data)
+        } else {
+            throw new Error(response.statusText)
+        }
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+const displayResults = (data) => {
+    let section = document.createElement('section')
+    let image = document.createElement('img')
+    let description = document.createElement('p')
+    let temp = document.createElement('p')
+    description.innerText = capitalizeStrings(data.weather[0].description)
+    temp.innerText = `${data.main.temp.toFixed(1)}° F` 
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+    image.setAttribute('src', iconsrc)
+    image.setAttribute('alt', 'weather')
+    section.append(image, temp, description)
+    weatherSection.append(section)
+}
+
+const capitalizeStrings = string => {
+    let arrString = string.split(" ")
+    for (var i = 0; i < arrString.length; i++) {
+        arrString[i] = arrString[i].charAt(0).toUpperCase() + arrString[i].slice(1);
+    }
+    string = arrString.join(" ")
+    return string
+}
+
+apiFetch(currentWeatherUrl, displayResults)

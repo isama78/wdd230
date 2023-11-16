@@ -14,7 +14,6 @@ const displayLinks = weeks => {
         li.textContent = `Week ${week.lesson}: ` 
         
         week.links.forEach((link, index) => {
-            console.log(index)
             let a = document.createElement('a')
             a.setAttribute('href', `${baseURL}${link.url}`)
             a.setAttribute('target', `_blank`)
