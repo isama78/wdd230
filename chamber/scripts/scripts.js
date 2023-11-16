@@ -3,6 +3,11 @@ const getDate = () => {
     return year
 }
 
+const getDay = () => {
+    let day = new Date().getDay()
+    return day
+}
+
 const visitsCounter = () => {
     let visits = parseInt(localStorage.getItem('visits'))
     if (isNaN(visits)) {
@@ -81,13 +86,27 @@ const displayMembers = members => {
         phone.innerHTML = member.phone
         name.innerHTML = member.name
         card.append(imgContent,name,phone,address,level,link)
-        membersContainer.append(card)
+        membersContainer?.append(card)
     });
 }
 
 const mainDirectory = document.querySelector('.members')
-const gridBtn = document.querySelector('.grid-btn')
-const listBtn = document.querySelector('.list-btn')
-gridBtn.addEventListener('click', () => mainDirectory.classList.remove('list'))
-listBtn.addEventListener('click', () => mainDirectory.classList.add('list'))
+let gridBtn= null
+let listBtn= null
+document.querySelector('.grid-btn') ? gridBtn = document.querySelector('.grid-btn') : null
+document.querySelector('.list-btn') ? listBtn = document.querySelector('.list-btn') : null
+gridBtn?.addEventListener('click', () => mainDirectory.classList.remove('list'))
+listBtn?.addEventListener('click', () => mainDirectory.classList.add('list'))
+
+// Show banner on Mondays, Tuesdays, and Wednesdays
+let currentDay = getDay()
+let banner = null
+document.querySelector('.banner') ? banner = document.querySelector('.banner') : null
+currentDay !== 1 && currentDay !== 2 && currentDay !== 3 ? banner?.classList.add('hide') : banner?.classList.remove('hide')
+
+let xBanner = null
+document.querySelector('.x-banner') ? xBanner = document.querySelector('.x-banner') : null 
+xBanner?.addEventListener('click', () => banner.classList.toggle('hide'))
+
+
 
