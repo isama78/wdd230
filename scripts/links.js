@@ -1,5 +1,6 @@
 const baseURL = 'https://isama78.github.io/wdd230/'
-const linksURL = 'http://127.0.0.1:5500/data/links.json'
+const linksURL = 'https://raw.githubusercontent.com/isama78/wdd230/main/data/links.json'
+
 let ulLinks = document.querySelector('.weeks')
 
 const getLinks = async url => {
