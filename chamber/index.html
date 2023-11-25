@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta name="description" content="This is the Mauro Jose Isa´s WDD 230 - Cordoba Chamber of Commerce web site">
-    <meta name="author" content="Mauro Jose Isa">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/larger.css">
+    <meta name="author" content="Mauro Jose Isa">
     <meta property="og:title" content="Mauro Jose Isa - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:image"
@@ -28,10 +28,12 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo">
-                <img src="./images/logo.webp" alt="logo">
-                <h3>Cordoba Chamber of Commerce</h3>
-            </div>
+            <a href="index.html">
+                <div class="logo">
+                    <img src="./images/logo.webp" alt="logo">
+                    <span>Cordoba Chamber of Commerce</span>
+                </div>
+            </a>
             <div class="icons">
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-facebook-f"></i>
@@ -48,7 +50,7 @@
             <div id="menu"></div>
         </header>
         <nav id="nav-bar">
-            <a href="#">Home</a>
+            <a class="active" href="#">Home</a>
             <a href="./discover.html">Discover</a>
             <a href="./directory.html">Directory</a>
             <a class="cta-upper-button" href="./join.html">Join</a>
@@ -73,8 +75,10 @@
                 <h2>Wheather</h2>
                 <div class="inner-weather">
                     <div>
-                        <img id="weather-img" src="" alt="weather">
-                        <figcaption></figcaption>
+                        <figure>
+                            <img id="weather-img" src="#" alt="weather">
+                            <figcaption></figcaption>
+                        </figure>
                     </div>
                     <div>
                         <p>Temperature</p>
@@ -87,7 +91,7 @@
                     </div>
                 </div>
                 <div class="forecast">
-                    
+
                 </div>
             </section>
             <section class="spotlights">

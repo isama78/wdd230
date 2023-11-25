@@ -12,7 +12,6 @@ const apiFetch = async (url, displayData) => {
         const response = await fetch(url)
         if (response.ok) {
             const data = await response.json()
-            console.log(data)
             displayData(data)
         } else {
             throw new Error(response.statusText)
@@ -38,7 +37,6 @@ const displayForecastResults = (data) => {
     for (element in data.list) {
         if(element % 8 !== 0) continue
         if(element > 16) continue
-        console.log(data.list[element].dt_txt.substring(0,10))
         let section = document.createElement('section')
         let image = document.createElement('img')
         let date = document.createElement('p')

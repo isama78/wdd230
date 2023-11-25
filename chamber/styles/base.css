@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
 
 .container {
@@ -23,7 +24,11 @@ header {
     align-items: center;
 }
 
-header h3 {
+header a {
+    text-decoration: none;
+}
+
+header span {
     color: #fff;
     font-size: 1rem;
 }
@@ -101,14 +106,14 @@ header .cta-upper-button {
     cursor: pointer;
 }
 
-.cta-upper-button {
+/* .cta-upper-button {
     width: 5rem;
     padding: 0.5rem;
     text-align: center;
     background-color: #fff;
     color: #000;
     border-radius: 5px;
-}
+} */
 
 .cta-upper-button i {
     margin-right: 1rem;
@@ -254,6 +259,7 @@ form label input, form select, form textarea {
     border: none;
     background-color: lightgray;
     outline: none;
+    min-height: 44px;
 }
 
 form label textarea {
@@ -440,7 +446,6 @@ input:checked+.slider:before {
 
 .dark-mode {
     background-color: rgb(29, 28, 28);
-    color: #fff;
 }
 
 /* --------------------------------------DARK-MODE-SWITCH-------------------------------------- */
@@ -549,6 +554,14 @@ main.members.list section {
 
 main.members.list section > div {
     display: none;
+}
+
+section > h2 {
+    font-size: 1.3rem;
+}
+
+.active {
+    text-decoration: underline;
 }
 
 .banner {

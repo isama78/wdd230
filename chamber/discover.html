@@ -1,163 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
-    <meta
-      name="description"
-      content="This is the Mauro Jose Isa´s WDD 230 - Cordoba Chamber of Commerce web site"
-    >
-    <meta name="author" content="Mauro Jose Isa" >
-    <link rel="stylesheet" href="./styles/normalize.css" >
-    <link rel="stylesheet" href="./styles/base.css" >
-    <link rel="stylesheet" href="./styles/medium.css" >
-    <link rel="stylesheet" href="./styles/larger.css" >
-    <meta
-      property="og:title"
-      content="Mauro Jose Isa - WDD 230 - Web Frontend Development"
-    >
-    <meta property="og:type" content="website" >
-    <meta
-      property="og:image"
-      content="https://estaticos-cdn.prensaiberica.es/clip/a4cea74d-35a6-4f08-b082-942ce287794a_16-9-aspect-ratio_default_0.jpg"
-    >
-    <meta
-      property="og:url"
-      content="https://isama78.github.io/wdd230/index.html"
-    >
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat:ital,wght@0,200;0,500;1,200&display=swap"
-      rel="stylesheet"
-    >
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    >
-    <title>Cordoba Chamber of Commerce || Discover</title>
-  </head>
 
-  <body>
-    <div class="container">
-      <header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="This is the Mauro Jose Isa´s WDD 230 - Cordoba Chamber of Commerce web site">
+  <meta name="author" content="Mauro Jose Isa">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/medium.css">
+  <link rel="stylesheet" href="./styles/larger.css">
+  <meta property="og:title" content="Mauro Jose Isa - WDD 230 - Web Frontend Development">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+    content="https://estaticos-cdn.prensaiberica.es/clip/a4cea74d-35a6-4f08-b082-942ce287794a_16-9-aspect-ratio_default_0.jpg">
+  <meta property="og:url" content="https://isama78.github.io/wdd230/index.html">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat:ital,wght@0,200;0,500;1,200&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <title>Cordoba Chamber of Commerce || Discover</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <a href="index.html">
         <div class="logo">
-          <img src="./images/logo.webp" alt="logo" >
-          <h3>Cordoba Chamber of Commerce</h3>
+          <img src="./images/logo.webp" alt="logo">
+          <span>Cordoba Chamber of Commerce</span>
         </div>
-        <div class="icons">
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-regular fa-envelope"></i>
-        </div>
-        <button class="cta">Join the Chamber</button>
-        <!-- Rectangular switch -->
-        <label class="switch">
-          <span>Dark Mode</span>
-          <input name="dark-mode" type="checkbox" >
-          <span class="slider"></span>
-        </label>
-        <div id="menu"></div>
-      </header>
-      <nav id="nav-bar">
-        <a href="./index.html">Home</a>
-        <a href="#">Discover</a>
-        <a href="./directory.html">Directory</a>
-        <a class="cta-upper-button" href="./join.html">Join</a>
-      </nav>
-      <div id="welcome"></div>
-      <main>
-        <h1>Cordoba Chamber of Commerce</h1>
-        <section class="statistics">
-            <h2>Statistics</h2>
-            <img loading="lazy" src="./images/discover-images/census.webp" width="300" height="515" alt="census">
-        </section>
-        <section class="atractions">
-          <h2>Atractions</h2>
-          <img loading="lazy" src="./images/discover-images/rsz_superpark.webp" alt="park">
-          <img loading="lazy" src="./images/discover-images/rsz_superpark2.webp" alt="park">
-        </section>
-        <section class="calendar">
-          <h2>Calendar</h2>
-          <img loading="lazy" src="./images/discover-images/calendar.webp" alt="calendar">
-        </section>
-        <section class="images">
-          <h2>Images</h2>
-          <figure
-            ><img
-              loading="lazy"
-              src="./images/discover-images/casamiento.webp"
-              alt="marriage"
-            >
-            <figcaption>Marriage Events</figcaption></figure
-          >
-          <figure
-            ><img
-              loading="lazy"
-              src="./images/discover-images/rsz_1octoberfest.webp"
-              alt="beer fest"
-            >
-            <figcaption>47th October Fest</figcaption></figure
-          >
-          <figure
-            ><img
-              loading="lazy"
-              src="./images/discover-images/rsz_1recital.webp"
-              alt="recital"
-            >
-            <figcaption>Recitals</figcaption></figure
-          >
-          <figure
-            ><img
-              loading="lazy"
-              src="./images/discover-images/rsz_carnaval.webp"
-              alt="carnival"
-            >
-            <figcaption>Carnival</figcaption></figure
-          >
-          <figure
-            ><img
-              loading="lazy"
-              src="./images/discover-images/rsz_feria.webp"
-              alt="fair"
-            >
-            <figcaption>Local Fair</figcaption></figure
-          >
-          <figure
-            ><img
-              loading="lazy"
-              src="./images/discover-images/rsz_religion.webp"
-              alt="flamenco"
-            >
-            <figcaption>Flamenco Fest</figcaption></figure
-          >
-        </section>
-      </main>
-      <footer>
+      </a>
+      <div class="icons">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-regular fa-envelope"></i>
+      </div>
+      <button class="cta">Join the Chamber</button>
+      <!-- Rectangular switch -->
+      <label class="switch">
+        <span>Dark Mode</span>
+        <input name="dark-mode" type="checkbox">
+        <span class="slider"></span>
+      </label>
+      <div id="menu"></div>
+    </header>
+    <nav id="nav-bar">
+      <a href="./index.html">Home</a>
+      <a class="active" href="#">Discover</a>
+      <a href="./directory.html">Directory</a>
+      <a class="cta-upper-button" href="./join.html">Join</a>
+    </nav>
+    <div id="welcome"></div>
+    <main>
+      <h1>Cordoba Chamber of Commerce</h1>
+      <section class="statistics">
+        <h2>Statistics</h2>
+        <img loading="lazy" src="./images/discover-images/census.webp" width="300" height="515" alt="census">
+      </section>
+      <section class="atractions">
+        <h2>Atractions</h2>
+        <img loading="lazy" src="./images/discover-images/rsz_superpark.webp" alt="park">
+        <img loading="lazy" src="./images/discover-images/rsz_superpark2.webp" alt="park">
+      </section>
+      <section class="calendar">
+        <h2>Calendar</h2>
+        <img loading="lazy" src="./images/discover-images/calendar.webp" alt="calendar">
+      </section>
+      <section class="images">
+        <h2>Images</h2>
+        <figure><img loading="lazy" src="./images/discover-images/casamiento.webp" alt="marriage">
+          <figcaption>Marriage Events</figcaption>
+        </figure>
+        <figure><img loading="lazy" src="./images/discover-images/rsz_1octoberfest.webp" alt="beer fest">
+          <figcaption>47th October Fest</figcaption>
+        </figure>
+        <figure><img loading="lazy" src="./images/discover-images/rsz_1recital.webp" alt="recital">
+          <figcaption>Recitals</figcaption>
+        </figure>
+        <figure><img loading="lazy" src="./images/discover-images/rsz_carnaval.webp" alt="carnival">
+          <figcaption>Carnival</figcaption>
+        </figure>
+        <figure><img loading="lazy" src="./images/discover-images/rsz_feria.webp" alt="fair">
+          <figcaption>Local Fair</figcaption>
+        </figure>
+        <figure><img loading="lazy" src="./images/discover-images/rsz_religion.webp" alt="flamenco">
+          <figcaption>Flamenco Fest</figcaption>
+        </figure>
+      </section>
+    </main>
+    <footer>
+      <div>
         <div>
-          <div>
-            <div class="footer-logo-container">
-              <img src="./images/logo.webp" alt="Camber of commerce logo" >
-              <span class="footer-title">Cordoba Chamber of Commerce</span>
-            </div>
-            <span>Cordoba, Cordoba, Argentina</span>
+          <div class="footer-logo-container">
+            <img src="./images/logo.webp" alt="Camber of commerce logo">
+            <span class="footer-title">Cordoba Chamber of Commerce</span>
           </div>
-          <p>
-            <span>camcomcba@gmail.com</span>
-            <span>+543516283947</span>
-          </p>
+          <span>Cordoba, Cordoba, Argentina</span>
         </div>
         <p>
-          <span id="year">&copy;</span>
-          <span> | Mauro Jose Isa</span>
-          <span> | WDD 230 Project | </span>
-          <span class="lastmod" id="lastModified"></span>
+          <span>camcomcba@gmail.com</span>
+          <span>+543516283947</span>
         </p>
-      </footer>
-    </div>
-    <script src="./scripts/scripts.js"></script>
-  </body>
+      </div>
+      <p>
+        <span id="year">&copy;</span>
+        <span> | Mauro Jose Isa</span>
+        <span> | WDD 230 Project | </span>
+        <span class="lastmod" id="lastModified"></span>
+      </p>
+    </footer>
+  </div>
+  <script src="./scripts/scripts.js"></script>
+</body>
+
 </html>
