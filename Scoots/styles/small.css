@@ -118,6 +118,51 @@ nav ul li a {
     color: #0167AC;
 }
 
+.main-rentals {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem 0;
+}
+
+.main-rentals .gallery {
+    border: 1px solid #0167AC;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.main-rentals .gallery section {
+    border: 1px solid #0167AC;
+    padding: .5rem;
+    width: 30%;
+    position: relative;
+}
+
+.main-rentals .gallery section a {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    text-decoration: none;
+    background-color: #0167AC;
+    padding: .3rem .5rem;
+    color: #f0f0f0;
+    transition: color .2s ease-in-out;
+}
+
+.thank-you-contact {
+    text-align: center;
+    padding: 3rem;
+}
+
+.main-rentals .gallery section a:hover {
+    background-color: #f0f0f0;
+    color: #0167AC;
+    border: 1px solid #0167AC;
+}
+
 span {
     font-weight: bold;
 }

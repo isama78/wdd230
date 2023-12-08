@@ -89,7 +89,6 @@ const URL = 'https://raw.githubusercontent.com/isama78/wdd230/main/Scoots/data/p
 const getData = async () => {
     const res = await fetch(URL)
     const data = await res.json()
-    console.log(data.prices)
     displayPrices(data.prices)
     displayGallery(data.prices)
 }
@@ -123,11 +122,13 @@ const displayGallery = (data) => {
         const section = document.createElement('section')
         const title = document.createElement('h3')
         const image = document.createElement('img')
-        console.log(element.imageURL)
+        const btn = document.createElement('a')
+        btn.href = 'reservations.html'
+        btn.innerText= 'Reserve It'
         image.setAttribute('src', element.imageURL)
         image.setAttribute('alt', element.imageURL)
         title.innerText = element["rental-type"]
-        section.append(title, image)
+        section.append(title, image, btn)
         gallery.append(section)
     })
 }
