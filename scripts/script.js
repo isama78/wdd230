@@ -2,6 +2,7 @@ let mainMenu = document.querySelector('#menu')
 let navBar = document.querySelector('#navBar')
 let weatherSection = document.querySelector('.local-weather')
 
+
 mainMenu.addEventListener('click', () => {
     mainMenu.classList.toggle('show')
     navBar.classList.toggle('show')
@@ -40,6 +41,7 @@ if (document.querySelector('#password')) {
 
 //Show weather
 const currentWeatherUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=-31.3990547&lon=-64.3590261&units=imperial&appid=cd2e98536f0eda82aa2f8d45270fc084'
+const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=-31.3990547&lon=-64.3590261&units=imperial&appid=cd2e98536f0eda82aa2f8d45270fc084'
 
 const apiFetch = async (url, displayData) => {
     try {
@@ -55,10 +57,24 @@ const apiFetch = async (url, displayData) => {
     }
 }
 
+const displayForecastResults = (data) => {
+    for (element in data.list) {
+        if(element % 8 !== 0) continue
+        if(element > 16) continue
+        let section = document.createElement('section')
+        let image = document.createElement('img')
+        let date = document.createElement('p')
+        date.innerText = data.list[element].dt_txt.substring(0,10)
+        const iconsrc = `https://openweathermap.org/img/wn/${data.list[element].weather[0].icon}@2x.png`
+        image.setAttribute('src', iconsrc)
+        image.setAttribute('alt', 'weather')
+        section.append(image, date)
+        forecast.append(section)
+    }
+}
+
 const displayResults = (data) => {
     let section = document.createElement('section')
-    let image = document.createElement('img')
-    let description = document.createElement('p')
     let temp = document.createElement('p')
     description.innerText = capitalizeStrings(data.weather[0].description)
     temp.innerText = `${data.main.temp.toFixed(1)}° F` 
@@ -79,3 +95,4 @@ const capitalizeStrings = string => {
 }
 
 apiFetch(currentWeatherUrl, displayResults)
+apiFetch(forecastUrl, displayForecastResults)

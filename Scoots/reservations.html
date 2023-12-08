@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the Mauro Jose Isa´s WDD 230 - Scooter Rentals Final Project">
+    <meta name="author" content="Mauro Jose Isa">
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;1,200;1,300&family=Mooli&family=Poppins:ital,wght@0,300;0,600;1,300&family=Roboto+Slab:wght@300;600&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap"
+        rel="stylesheet">
+    <meta property="og:title" content="Mauro Jose Isa - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://cf.bstatic.com/xdata/images/hotel/max1024x768/466080196.jpg?k=b016f0c28d837c79ebb3d9304afc4ba9b58f5170c3374dbf2899737eb46f0efe&o=&hp=1">
+    <meta property="og:url" content="FALTA COMPLETAR">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Scoots || Home</title>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <div class="logo">
+                <img src="./images/favicon.png" width="60" height="60" alt="logo">
+                <h1>Scoots</h1>
+            </div>
+            <div id="menu"></div>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="rentals.html">Rentals</a></li>
+                    <li><a class="active" href="Reservations.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hero">
+                <picture>
+                    <source media="(max-width: 400px)" srcset="./images/cozumel-hero-small.webp">
+                    <source media="(max-width: 800px)" srcset="./images/cozumel-hero-medium.webp">
+                    <img src="./images/cozumel-hero-large.webp" alt="Cozumel beach">
+                </picture>
+            </div>
+
+</html>
+</header>
+<main class="main-reservations">
+    <div class="agreements">
+        <h2 class="reservations-title">Rental Services and Agreements</h2>
+        <ul>
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid drivers license is required in hand at the time of rental.</li>
+            <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+            <li>Fuel charge is not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is included.</li>
+            <li>Damage insurance is available for purchase.</li>
+            <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+            <li>Rentals may be returned to either physical location.</li>
+        </ul>
+    </div>
+    <div class="myForm">
+        <h2>Reservation Form</h2>
+        <form action="">
+            <label for="name">
+                Name
+                <input type="text" name="name" id="name">
+            </label>
+            <label for="email">
+                Email
+                <input type="email" name="email" id="email">
+            </label>
+            <label for="date">
+                Rental Day
+                <input type="date" name="date" id="date">
+            </label>
+            <label for="number">
+                Amount of Days
+                <input type="number" name="number" id="number">
+            </label>
+            <label for="rental-type">
+                Rental Type
+                <input type="text" name="rental-type" id="rental-type">
+            </label>
+            <label for="persons">
+                Amount of Persons
+                <input type="number" name="persons" id="persons">
+            </label>
+            <label for="phone">
+                Phone Number
+                <input type="phone" name="phone" id="phone">
+            </label>
+            <label for="state">
+                State / Country
+                <input type="text" name="state" id="state">
+            </label>
+            <label for="comments">
+                Comments
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </label>
+            <input type="submit" value="Rent">
+        </form>
+    </div>
+</main>
+<footer>
+    <div class="social-media">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+    </div>
+    <div class="contact-info">
+        <span id="year">Copyright &copy;</span>
+        <span>cozumelscoots@gmail.com</span>
+        <span>Call Us: +543516283947</span>
+        <span class="lastmod" id="lastModified"></span>
+    </div>
+</footer>
+</div>
+<script src="./scripts/script.js"></script>
+</body>

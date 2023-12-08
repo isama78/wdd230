@@ -1,0 +1,25 @@
+@media (min-width: 600px) {
+    #nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #nav-bar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    footer span {
+        display: inline;
+        margin: 0 .5rem;
+    }
+}

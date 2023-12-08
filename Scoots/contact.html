@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the Mauro Jose Isa´s WDD 230 - Scooter Rentals Final Project">
+    <meta name="author" content="Mauro Jose Isa">
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;1,200;1,300&family=Mooli&family=Poppins:ital,wght@0,300;0,600;1,300&family=Roboto+Slab:wght@300;600&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap"
+        rel="stylesheet">
+    <meta property="og:title" content="Mauro Jose Isa - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://cf.bstatic.com/xdata/images/hotel/max1024x768/466080196.jpg?k=b016f0c28d837c79ebb3d9304afc4ba9b58f5170c3374dbf2899737eb46f0efe&o=&hp=1">
+    <meta property="og:url" content="FALTA COMPLETAR">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Scoots || Home</title>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <div class="logo">
+                <img src="./images/favicon.png" width="60" height="60" alt="logo">
+                <h1>Scoots</h1>
+            </div>
+            <div id="menu"></div>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="rentals.html">Rentals</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a class="active" href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hero">
+                <picture>
+                    <source media="(max-width: 400px)" srcset="./images/cozumel-hero-small.webp">
+                    <source media="(max-width: 800px)" srcset="./images/cozumel-hero-medium.webp">
+                    <img src="./images/cozumel-hero-large.webp" alt="Cozumel beach">
+                </picture>
+                <div>
+                    <div class="hero-label">
+                        <a href="./reservations.html">Make a Reservation</a>
+                    </div>
+                </div>
+            </div>
+
+</html>
+</header>
+<main class="main-contact">
+    <div class="contact-info">
+        <h2>Contact Info</h2>
+        <div>
+            <h3>Cozumel Ferry Dock</h3>
+            <p>Costera Sur, 77600 Cozumel, QROO, México</p>
+            <p>Tel: +543516283947</p>
+            <p>cozumelscoots@gmail.com</p>
+        </div>
+        <div>
+            <h3>Terminal Puerta Maya</h3>
+            <p>77622, Centro, 77600 Cozumel, Q.R., México</p>
+            <p>Tel: +543514826401</p>
+            <p>cozumelscoots@gmail.com</p>
+        </div>
+    </div>
+    <div class="contact-form">
+        <h2>Contact Form</h2>
+        <form action="">
+            <label for="name">
+                Name
+                <input type="text" name="name" id="name">
+            </label>
+            <label for="email">
+                E-mail
+                <input type="email" name="email" id="email">
+            </label>
+            <label for="email">
+                Comments
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            </label>
+            <input type="submit" value="Comment">
+        </form>
+    </div>
+    <div class="location">
+        <h2>Get to know our Branches</h2>
+        <div class="Cozumel-ferry-dock">
+            <h3>Cozumel Ferry Dock</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3736.9027733782573!2d-86.95157099711956!3d20.510211570764067!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59544d087521%3A0x69eae2037b2b2cba!2sTerminal%20Ferrys%20Cozumel!5e0!3m2!1ses!2sar!4v1702036504236!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="puerta-maya">
+            <h3>Terminal Puerta Maya</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12572.126888457084!2d-86.98384116855732!3d20.476867438687307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cd70625421%3A0xb1974a1818657af2!2sCozumel%20Cruise%20Terminal!5e0!3m2!1ses!2sar!4v1702036621005!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="social-media">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+    </div>
+    <div class="contact-info">
+        <span id="year">Copyright &copy;</span>
+        <span>cozumelscoots@gmail.com</span>
+        <span>Call Us: +543516283947</span>
+        <span class="lastmod" id="lastModified"></span>
+    </div>
+</footer>
+</div>
+<script src="./scripts/script.js"></script>
+</body>
