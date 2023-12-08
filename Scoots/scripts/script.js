@@ -84,11 +84,12 @@ document.querySelector('#lastModified').innerHTML = `Last modification: ${docume
 
 //Rentals table
 let bodyTable = document.querySelector('#table-body')
-const URL = 'http://127.0.0.1:5500/Scoots/data/prices.json'
+const URL = 'https://raw.githubusercontent.com/isama78/wdd230/main/Scoots/data/prices.json'
 
 const getData = async () => {
     const res = await fetch(URL)
     const data = await res.json()
+    console.log(data.prices)
     displayPrices(data.prices)
     displayGallery(data.prices)
 }
@@ -106,11 +107,11 @@ const displayPrices = (data) => {
         cell2.innerText = element["max-persons"]
         cell3.innerText = `$${element.resHalfDay}`
         cell4.innerText = `$${element.resFullDay}`
-        cell5.innerText = `$${element["walk-inHalfDay"]}` 
-        cell6.innerText = `$${element["walk-inFullDay"]}` 
-        row.append(cell,cell2,cell3,cell4,cell5,cell6)
+        cell5.innerText = `$${element["walk-inHalfDay"]}`
+        cell6.innerText = `$${element["walk-inFullDay"]}`
+        row.append(cell, cell2, cell3, cell4, cell5, cell6)
         bodyTable.append(row)
-        
+
     });
 }
 
@@ -118,12 +119,15 @@ document.querySelector('#table-body') ? getData() : null
 
 //Rentals Gallery
 const displayGallery = (data) => {
-    const section = document.createElement('section')
-    const title = document.createElement('h3')
-    const image = document.createElement('img')
-    image.setAttribute('src', data.imageURL)
-    image.setAttribute('alt', data.imageURL)
-    title.innerText = data["rental-type"]
-    section.append(title, image)
-    gallery.append(section)
+    data.forEach(element => {
+        const section = document.createElement('section')
+        const title = document.createElement('h3')
+        const image = document.createElement('img')
+        console.log(element.imageURL)
+        image.setAttribute('src', element.imageURL)
+        image.setAttribute('alt', element.imageURL)
+        title.innerText = element["rental-type"]
+        section.append(title, image)
+        gallery.append(section)
+    })
 }

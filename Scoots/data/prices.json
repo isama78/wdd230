@@ -2,7 +2,7 @@
     "prices": [
         {
             "rental-type": "Honda Metro Scooter",
-            "imageURL": "wdd230/Scoots/images/honda-metro-scooter.webp",
+            "imageURL": "Scoots/images/honda-metro-scooter.webp",
             "max-persons": 1,
             "resHalfDay": 20,
             "resFullDay": 30,
@@ -11,7 +11,7 @@
         },
         {
             "rental-type": "Honda Dio Scooter",
-            "imageURL": "wdd230/Scoots/images/honda_dio__2_.webp",
+            "imageURL": "Scoots/images/honda_dio__2_.webp",
             "max-persons": 2,
             "resHalfDay": 30,
             "resFullDay": 40,
@@ -20,7 +20,7 @@
         },
         {
             "rental-type": "Honda PCX150 Scooter",
-            "imageURL": "wdd230/Scoots/images/honda-pcx-150_1.webp",
+            "imageURL": "Scoots/images/honda-pcx-150_1.webp",
             "max-persons": 2,
             "resHalfDay": 40,
             "resFullDay": 50,
@@ -29,7 +29,7 @@
         },
         {
             "rental-type": "Honda Pioneer ATV",
-            "imageURL": "wdd230/Scoots/images/2023-pioneer-500-black_forest_green-650x380.webp",
+            "imageURL": "Scoots/images/2023-pioneer-500-black_forest_green-650x380.webp",
             "max-persons": 4,
             "resHalfDay": 50,
             "resFullDay": 70,
@@ -38,7 +38,7 @@
         },
         {
             "rental-type": "Jeep Wrangler - 4 door with a/c",
-            "imageURL": "wdd230/Scoots/images/jeep-wrangler.webp",
+            "imageURL": "Scoots/images/jeep-wrangler.webp",
             "max-persons": 5,
             "resHalfDay": 70,
             "resFullDay": 100,
@@ -47,7 +47,7 @@
         },
         {
             "rental-type": "Jeep Wrangler - 2 door",
-            "imageURL": "wdd230/Scoots/images/Jeep-Wrangler-2door.webp",
+            "imageURL": "Scoots/images/Jeep-Wrangler-2door.webp",
             "max-persons": 4,
             "resHalfDay": 60,
             "resFullDay": 85,
