@@ -22,4 +22,19 @@
         display: inline;
         margin: 0 .5rem;
     }
+
+    .main, .main-reservations {
+        flex-direction: row;
+        column-gap: 1rem;
+    }
+
+    .main-contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .location {
+        grid-column: 1 / 3;
+    }
 }

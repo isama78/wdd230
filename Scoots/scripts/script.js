@@ -10,14 +10,24 @@ let gallery = document.querySelector('.gallery')
 let menu = document.querySelector('#menu')
 let navBar = document.querySelector('#nav-bar')
 
+let tempMax = document.querySelector('#temp-max')
+let tempMaxVal = document.querySelector('.temp-max-value')
+let xBtnTempMax = document.querySelector('.close-temp-max')
+
+if (xBtnTempMax) {
+    xBtnTempMax.addEventListener('click', () => {
+        tempMax.classList.add('close')
+    })
+}
+
+
 menu.addEventListener('click', () => {
-    console.log('clic')
     menu.classList.toggle('show')
     navBar.classList.toggle('show')
 })
 
-const currentWeatherUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=-31.3990547&lon=-64.3590261&units=imperial&appid=cd2e98536f0eda82aa2f8d45270fc084'
-const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=-31.3990547&lon=-64.3590261&units=imperial&appid=cd2e98536f0eda82aa2f8d45270fc084'
+const currentWeatherUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=20.4349833&lon=-87.3730677&units=imperial&appid=cd2e98536f0eda82aa2f8d45270fc084'
+const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=20.4349833&lon=-87.3730677&units=imperial&appid=cd2e98536f0eda82aa2f8d45270fc084'
 
 const apiFetch = async (url, displayData) => {
     try {
@@ -58,7 +68,7 @@ const displayResults = (data) => {
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     image.setAttribute('src', iconsrc)
     image.setAttribute('alt', 'weather')
-
+    tempMaxVal.innerText = `${data.main.temp_max}F°`
 }
 
 const capitalizeStrings = string => {
@@ -127,6 +137,7 @@ const displayGallery = (data) => {
         btn.innerText= 'Reserve It'
         image.setAttribute('src', element.imageURL)
         image.setAttribute('alt', element.imageURL)
+        image.setAttribute('loading', 'lazy')
         title.innerText = element["rental-type"]
         section.append(title, image, btn)
         gallery.append(section)

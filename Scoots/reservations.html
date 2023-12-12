@@ -51,80 +51,82 @@
                 </picture>
             </div>
 
-</html>
-</header>
-<main class="main-reservations">
-    <div class="agreements">
-        <h2 class="reservations-title">Rental Services and Agreements</h2>
-        <ul>
-            <li>A $50 security deposit is required to confirm reservations.</li>
-            <li>A valid drivers license is required in hand at the time of rental.</li>
-            <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
-            <li>Fuel charge is not included.</li>
-            <li>Unlimited mileage.</li>
-            <li>Liability insurance is included.</li>
-            <li>Damage insurance is available for purchase.</li>
-            <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
-            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
-            <li>Rentals may be returned to either physical location.</li>
-        </ul>
+
+        </header>
+        <main class="main-reservations">
+            <div class="agreements">
+                <h2 class="reservations-title">Rental Services and Agreements</h2>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+            </div>
+            <div class="myForm">
+                <h2>Reservation Form</h2>
+                <form>
+                    <label for="name">
+                        Name
+                        <input type="text" name="name" id="name">
+                    </label>
+                    <label for="email">
+                        Email
+                        <input type="email" name="email" id="email">
+                    </label>
+                    <label for="date">
+                        Rental Day
+                        <input type="date" name="date" id="date">
+                    </label>
+                    <label for="number">
+                        Amount of Days
+                        <input type="number" name="number" id="number">
+                    </label>
+                    <label for="rental-type">
+                        Rental Type
+                        <input type="text" name="rental-type" id="rental-type">
+                    </label>
+                    <label for="persons">
+                        Amount of Persons
+                        <input type="number" name="persons" id="persons">
+                    </label>
+                    <label for="tel">
+                        Phone Number
+                        <input type="tel" name="tel" id="tel">
+                    </label>
+                    <label for="state">
+                        State / Country
+                        <input type="text" name="state" id="state">
+                    </label>
+                    <label for="comments">
+                        Comments
+                        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                    </label>
+                    <input type="submit" value="Rent">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="social-media">
+                <a href="https://www.facebook.com/pages/Cozumel-Mexico/312209625523436" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/cozumel_isla/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/VisitCozumel" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+            </div>
+            <div class="contact-info">
+                <span id="year">Copyright &copy;</span>
+                <span>cozumelscoots@gmail.com</span>
+                <span>Call Us: +543516283947</span>
+                <span class="lastmod" id="lastModified"></span>
+            </div>
+        </footer>
     </div>
-    <div class="myForm">
-        <h2>Reservation Form</h2>
-        <form action="">
-            <label for="name">
-                Name
-                <input type="text" name="name" id="name">
-            </label>
-            <label for="email">
-                Email
-                <input type="email" name="email" id="email">
-            </label>
-            <label for="date">
-                Rental Day
-                <input type="date" name="date" id="date">
-            </label>
-            <label for="number">
-                Amount of Days
-                <input type="number" name="number" id="number">
-            </label>
-            <label for="rental-type">
-                Rental Type
-                <input type="text" name="rental-type" id="rental-type">
-            </label>
-            <label for="persons">
-                Amount of Persons
-                <input type="number" name="persons" id="persons">
-            </label>
-            <label for="phone">
-                Phone Number
-                <input type="phone" name="phone" id="phone">
-            </label>
-            <label for="state">
-                State / Country
-                <input type="text" name="state" id="state">
-            </label>
-            <label for="comments">
-                Comments
-                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-            </label>
-            <input type="submit" value="Rent">
-        </form>
-    </div>
-</main>
-<footer>
-    <div class="social-media">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-square-x-twitter"></i>
-    </div>
-    <div class="contact-info">
-        <span id="year">Copyright &copy;</span>
-        <span>cozumelscoots@gmail.com</span>
-        <span>Call Us: +543516283947</span>
-        <span class="lastmod" id="lastModified"></span>
-    </div>
-</footer>
-</div>
-<script src="./scripts/script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
+
+</html>

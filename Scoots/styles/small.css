@@ -33,6 +33,43 @@ header .logo img{
     display: flex;
 }
 
+header #temp-max {
+    position: absolute;
+    left: 10px;
+    top: 5rem;
+    border: 1px solid #f0f0f0;
+    padding: .5rem;
+    width: 10rem;
+    background-color: rgba(1, 103, 172,.5);
+}
+
+header #temp-max i {
+    position: relative;
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    left: 8rem;
+    top: -5px;
+}
+
+.close {
+    display: none;
+}
+
+header .temp-max-value {
+    position: relative;
+    left: 28px;
+    top: 0.4rem;
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+header #temp-max h3 {
+    color: #f0f0f0;
+    font-weight: normal;
+}
+
 .logo h1 {
     position: absolute;
     left: 70px;
@@ -105,8 +142,15 @@ nav ul li a {
 
 .main {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    gap: 1rem;
+    row-gap: 1rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+.main > section {
+    border: 1px solid #0167AC;
     padding: 1rem;
 }
 
@@ -198,7 +242,7 @@ span {
 
 footer {
     background-color: #0167AC;
-    height: 7rem;
+    height: 9rem;
     padding: 1rem;
     color: #f0f0f0;
     display: flex;
@@ -409,5 +453,19 @@ nav {
 
     nav ul {
         line-height: 1.5rem;
+    }
+
+    header #temp-max h3 {
+        font-size: 1rem;
+    }
+
+    header #temp-max span {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    header #temp-max {
+        left: 10px;
+        top: 4rem;
     }
 }
